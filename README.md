@@ -1,29 +1,18 @@
 # discord
 
 ## Purpose
-[Describe the purpose of this SageLang library module.]
+Discord API wrapper for building bots and integrations with SageLang.
 
 ## Features
-- [Feature 1]
-- [Feature 2]
-
-## Installation
-Add as a submodule to your SageLang project:
-```bash
-git submodule add <repository-url> core/lib/discord
-```
-
-## API Documentation
-[Link to detailed API documentation]
+- **Client**: Core Discord gateway client.
+- **Gateway**: Real-time event handling.
+- **REST**: Interface for Discord REST API.
 
 ## Usage Example
 ```sage
-import discord
-# Example usage...
+import discord.client
+
+let bot = DiscordClient(token)
+bot.on_ready(proc(): print "Bot is ready!")
+bot.connect()
 ```
-
-## Contributing
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
-
-## License
-MIT (or maintain main project license)
